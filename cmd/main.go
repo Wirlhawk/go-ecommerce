@@ -14,9 +14,10 @@ import (
 func main() {
 	godotenv.Load()
 	db, err := db.NewMySQLStorage(mysql.Config{
-		User:                 config.Envs.DBUser,
-		Passwd:               config.Envs.DBPassword,
-		Addr:                 config.Envs.DBAddress,
+		User:                 configs.Envs.DBUser,
+		Passwd:               configs.Envs.DBPassword,
+		Addr:                 configs.Envs.DBAddress,
+		DBName:               configs.Envs.DBName,
 		Net:                  "tcp",
 		AllowNativePasswords: true,
 		ParseTime:            true,
