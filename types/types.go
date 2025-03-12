@@ -38,6 +38,11 @@ type OrderItem struct {
 	CreatedAt time.Time `json:"createdAt"`
 }
 
+type CartCheckoutItem struct {
+	ProductID int `json:"productID"`
+	Quantity  int `json:"quantity"`
+}
+
 type User struct {
 	ID        int       `json:"id"`
 	FirstName string    `json:"firstName"`
