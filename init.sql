@@ -1,0 +1,3 @@
+ALTER USER 'root'@'%' IDENTIFIED BY 'mysecretpassword';
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
